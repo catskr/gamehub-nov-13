@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <meta name="description" content="start page ?">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <Header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    
+                </ul>
+            </nav>
+            <h1>GameHub</h1>
+            <img src="images/GameHub_Logo.png">
+        </Header>
+
+        <form action="login-success.php" method="POST">
+            <fieldset>
+                <legend>Sign In</legend>
+                <label for="name"> Username</label>
+                <input type="text" name="name" id="name" class="form__input" required>
+
+                <label for="password"> Password</label>
+                <input type="text" name="password" id="password" class="form__input" required>
+
+                <input type="checkbox" id="remember me" name="remember me" value="remember me">
+                <label for="remember me"> Remember me</label>
+                <input type="submit" value="Login">
+            </fieldset>
+            
+        </form>
+
+        <main>
+            <h2>New Games</h2>
+            <h2>Sale</h2>
+            <h2>All Games</h2>
+
+        </main>
+
+        <footer>
+            About
+        </footer>
+    </body>
+</html>
