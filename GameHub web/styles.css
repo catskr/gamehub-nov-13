@@ -1,6 +1,8 @@
 body {
     background-color:rgba(34, 37, 51, 1);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+    padding: 0%;
     
 }
 
@@ -12,6 +14,7 @@ img {
 
 header {
     background-color:rgba(19, 21, 32, 1);
+    height: 90px;
     
     
 }
@@ -25,23 +28,49 @@ h2 {
     color: aliceblue;
 }
 
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+nav ul {
+    padding: 10px;
+    text-align: right;
+    margin: auto;
+}
 
 nav li {
     display: inline-block;
 }
 
-nav a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
+nav li:nth-child(1){float: left;}
+nav li:nth-child(2){float: right;}
+
+#navbar {
+    width: 100%;
+    height: 111px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(19, 21, 32, 1);
 }
 
-nav a:hover {
-    text-decoration: underline;
+#navbar img {
+    display: block;
+    width: 172px;
+    height: 111px;
+    margin: auto;
+
 }
 
-nav ul {
-    padding: 0px;
+.logo {
+    
+    position: center;
+    left: 50%;
+    top: 0;
+    content: "";
 }
 
 footer {
@@ -56,4 +85,67 @@ form {
 
 .form__input {
     display: block;
+}
+
+/*sign in*/
+
+            
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 16px;
+    background-color: 34, 36, 51, 1;
+    
+}
+
+input[type=username],input[type=username],input[type=Pawssord]{
+    width: 50%;
+    height: 10px;
+    padding: 15px;
+    margin: 5px 0 22px 0; 
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    
+}
+
+input[type=username]:focus,input[type=username]:focus,input[type=Password]:focus{
+    background-color: aqua;
+    outline: none;
+}
+
+input[type=password],input[type=password],input[type=Pawssord]{
+    width: 50%;
+    height: 10px;
+    padding: 15px;
+    margin: 5px 0 22px 0; 
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+
+input[type=password]:focus,input[type=password]:focus,input[type=Password]:focus{
+    background-color: aqua;
+    outline: none;
+}
+
+.loginbtn{
+    background-color: green;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.loginbtn:hover{
+    opacity: 1;
+}
+a{
+    color: blue;
 }
